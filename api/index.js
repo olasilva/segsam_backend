@@ -3,9 +3,10 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
-import authRoutes from './routes/auth.js';
-import workRoutes from './routes/works.js';
-import contactRoutes from './routes/contact.js';
+// Note the '../' because we are now inside the 'api' folder
+import authRoutes from '../routes/auth.js';
+import workRoutes from '../routes/works.js';
+import contactRoutes from '../routes/contact.js';
 
 dotenv.config();
 const app = express();
